@@ -6,6 +6,7 @@ Author: Dr Jan Schindler (formerly Zörner) (<mailto:schindlerj@landcareresearch
 
 Published under GNU GPLv3
 
+Forked on Feb. 1 2024. 
 
 # Summary
 PyCrown is a Python package for identifying tree top positions in a canopy height model (CHM) and delineating individual tree crowns.
@@ -87,9 +88,14 @@ Windows: `pycrown-env\Scripts\activate.bat`
 
 #### Install all required packages
 
+Install gdal on Windows: 1) download gdal and rasterio wheels at https://www.lfd.uci.edu/~gohlke/pythonlibs/#gdal; 2) install with `pip install GDAL-3.1.4-cp36-cp36m-win_amd64.whl`.
+
+
 `python -m pip install --upgrade pip`
 
 `pip install -r requirements.txt`
+
+Probably laszip tool needs to be installed: `pip install laszip`
 
 ## Run Tests
 There are only some rudimentary tests provided at the moment, but it is advised to check that everything works:
